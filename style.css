@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo a {
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+nav ul {
+    display: none;
+}
+
+nav .hamburger a {
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+    padding-right: 10px;
+}
+
+#header {
+    margin-top: 40px;
+    position: relative;
+}
+
+.img-div {
+    width: 100%;
+    height: 200px;
+    background-image: url("./assets/burger-bcg.jpg");
+    background-size: cover;
+    background-position-y: -100px;
+}
+
+#header .header-text h1 {
+    position: absolute;
+    top: 50px;
+    left: 20%;
+    color: rgb(107, 229, 246);
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+#header .header-button a {
+    position: absolute;
+    top: 110px;
+    left: 35%;
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+    background-color: rgb(59, 58, 58);
+    padding: 5px 10px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.quote1 {
+    width: 100%;
+    line-height: 65px;
+    height: 65px;
+    background-color: rgb(59, 58, 58);
+    text-align: center;
+}
+
+.quote1 p {
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+#about {
+    padding: 40px 20px;
+}
+
+#about h2 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 17.5px;
+    font-weight: 400;
+    line-height: 20px;
+    word-spacing: 5px;
+}
+
+.photos {
+    display: flex;
+    flex-direction: column;
+}
+
+.photos img {
+    width: 100%;
+}
+
+.quote2 {
+    width: 100%;
+    line-height: 75px;
+    height: 75px;
+    background-color: aquamarine;
+    text-align: center;
+}
+
+.quote2 p {
+    color: black;
+    font-size: 16.5px;
+    font-weight: 400;
+    line-height: 25px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#contact {
+    padding: 40px 20px;
+}
+
+#contact h2 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#contact form label {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+#contact form input, textarea{
+    display: block;
+    width: 100%;
+}
+
+#contact form #name, #email, #comments {
+    height: 25px;
+    border: none;
+    box-shadow: 0.1px 1px 2px 1px rgb(0, 0, 0, 0.5);
+    border-radius: 3px;
+    margin-bottom: -25px;
+}
+
+#contact form textarea {
+    height: 100px;
+    border: none;
+    box-shadow: 0.1px 1px 2px 1px rgb(0, 0, 0, 0.5);
+    border-radius: 3px; 
+}
+
+#contact form .button {
+    background-color: rgb(59, 58, 58);
+    color: white;
+    font-size: 16.5px;
+    padding: 10px 0;
+    border-radius: 5px;
+    margin: 15px 0 0;
+}
+
+#footer {
+    width: 100%;
+    line-height: 50px;
+    height: 50px;
+    background-color: rgb(59, 58, 58);
+    text-align: center;
+}
+
+#footer p {
+    color: white;
+    font-size: 16.5px;
+    font-weight: 400;
+}
+
+@media screen and (min-width: 375px) {
+    #header .header-text h1 {
+        font-size: 30px;
+        letter-spacing: 6px;
+    }
+
+    #header .header-button a {
+        font-size: 17px;
+    }
+
+    .quote1 p {
+        font-size: 16px;
+    }
+
+    #about p {
+        font-size: 20px;
+    }
+
+    .quote2 p {
+        font-size: 17px;
+    }
+
+    #contact form label {
+        font-size: 17px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    nav {
+        height: 60px;
+        z-index: 10;
+    }
+
+    nav .logo a {
+        font-size: 30px;
+        padding-left: 20px;
+    }
+
+    nav .hamburger a {
+        font-size: 30px;
+        padding-right: 20px;
+    }
+
+    #header {
+        margin-top: 60px;
+    }
+
+    .img-div {
+        height: 500px;
+        background-position-y: -200px;
+    }
+
+    #header .header-text h1 {
+        top: 200px;
+        left: 20%;
+        font-size: 60px;
+        font-weight: 700;
+        letter-spacing: 15px;
+    }
+    
+    #header .header-button a {
+        top: 300px;
+        left: 40%;
+        font-size: 25px;
+        padding: 15px 20px;
+    }
+    
+    .quote1 {
+        width: 100%;
+        line-height: 100px;
+        height: 100px;
+    }
+    
+    .quote1 p {
+        font-size: 25px;
+        font-weight: 400;
+    }
+    
+    #about {
+        padding: 80px 60px;
+    }
+    
+    #about h2 {
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    
+    #about p {
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 40px;
+        word-spacing: 10px;
+    }
+
+    .quote2 {
+        line-height: 100px;
+        height: 100px;
+    }
+    
+    .quote2 p {
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 50px;
+    }
+    
+    #contact {
+        padding: 80px 60px;
+    }
+    
+    #contact h2 {
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    
+    #contact form label {
+        font-size: 25px;
+        font-weight: 400;
+    }
+    
+    #contact form input, textarea{
+        display: block;
+        width: 100%;
+    }
+    
+    #contact form #name, #email, #comments {
+        height: 40px;
+        box-shadow: -2px -1px 3px 3px rgb(0, 0, 0, 0.5);
+        border-radius: 5px;
+        margin-bottom: 0;
+    }
+    
+    #contact form textarea {
+        height: 150px;
+        box-shadow: -2px -1px 3px 3px rgb(0, 0, 0, 0.5);
+        border-radius: 5px;
+    }
+    
+    #contact form .button {
+        font-size: 25px;
+    }
+    
+    #footer {
+        line-height: 100px;
+        height: 100px;
+    }
+    
+    #footer p {
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    nav {
+        height: 70px;
+        z-index: 10;
+    }
+    
+    nav .logo a {
+        font-size: 35px;
+        padding-left: 30px;
+    }
+
+    nav .hamburger a {
+        display: none;
+    }
+    
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        justify-content: space-between;
+        padding-right: 30px;
+    } 
+    
+    nav ul li {
+        padding-inline: 25px;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: black;
+        font-size: 30px;
+        font-weight: 400;
+    }
+    
+    #header {
+        margin-top: 70px;
+    }
+    
+    .img-div {
+        height: 550px;
+        background-position-y: -600px;
+    }
+    
+    #header .header-text h1 {
+        top: 150px;
+        left: 20%;
+        font-size: 100px;
+        font-weight: 700;
+        letter-spacing: 20px;
+    }
+    
+    #header .header-button a {
+        top: 320px;
+        left: 40%;
+        font-size: 40px;
+        padding: 20px 30px;
+        border-radius: 3px;
+    }
+    
+    .quote1 {
+        line-height: 130px;
+        height: 130px;
+    }
+    
+    .quote1 p {
+        color: white;
+        font-size: 40px;
+    }
+    
+    #about {
+        padding: 60px 140px;
+    }
+    
+    #about h2 {
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+    
+    #about p {
+        font-size: 40px;
+        line-height: 60px;
+        word-spacing: 7px;
+    }
+    
+    .photos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .photos img {
+        width: 50%;
+    }
+    
+    .quote2 {
+        line-height: 150px;
+        height: 150px;
+    }
+    
+    .quote2 p {
+        font-size: 35px;
+        line-height: 50px;
+       
+    }
+    
+    #contact {
+        padding: 60px 200px;
+    }
+    
+    #contact h2 {
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    
+    #contact form label {
+        font-size: 35px;
+    }
+    
+    #contact form #name, #email, #comments {
+        height: 45px;
+        box-shadow: -2px -1px 3px 3px rgb(0, 0, 0, 0.5);
+        border-radius: 7px;
+        margin-bottom: 0;
+    }
+    
+    #contact form textarea {
+        height: 180px;
+        box-shadow: -2px -1px 3px 3px rgb(0, 0, 0, 0.5);
+        border-radius: 7px; 
+    }
+    
+    #contact form .button {
+        font-size: 35px;
+        border-radius: 10px;
+    }
+    
+    #footer {
+        line-height: 100px;
+        height: 100px;
+    }
+    
+    #footer p {
+        font-size: 30px;
+    }
+}
